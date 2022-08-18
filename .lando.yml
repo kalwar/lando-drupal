@@ -1,0 +1,14 @@
+name: my-first-drupal9-app
+recipe: drupal9
+config:
+  webroot: .
+  drush: true
+  xdebug: false
+tooling:
+  'lint:php:themes':
+    service: appserver
+    cmd: /app/vendor/bin/phpcs --standard=phpcs-themes.xml
+    description: 'Runs php linter against your custom code. Ex: lando lint:php'
+services:
+  myservice:
+    type: phpmyadmin
