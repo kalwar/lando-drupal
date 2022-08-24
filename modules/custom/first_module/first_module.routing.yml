@@ -1,0 +1,7 @@
+first_module.first:
+  path: '/first/page'
+  defaults:
+    _controller: '\Drupal\first_module\Controller\FirstController::first'
+    _title: 'Welcome to My Module in Drupal 9'
+  requirements: 
+    _permission: 'access content'
