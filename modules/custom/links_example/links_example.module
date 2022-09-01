@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Hello World module file.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function links_example_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.links_example':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is an links example second custom module.') . '</p>';
+      $output .= '<dd>' . t('If link text has been submitted for a URL, then by default this link text is displayed as a link to the URL. If you want to display both the link text <em>and</em> the URL, choose the appropriate link format from the drop-down menu in the <em>Manage display</em> page. If you only want to display the URL even if link text has been submitted, choose <em>Link</em> as the format, and then change its <em>Format settings</em> to display <em>URL only</em>.') . '</dd>';
+      $output .= '<dt>' . t('Adding attributes to links') . '</dt>';
+      return $output;
+    default:
+  }
+}
