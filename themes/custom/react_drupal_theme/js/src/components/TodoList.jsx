@@ -7,15 +7,13 @@ function TodoList({ todos, handleTodoChecked, handleTodoRemove, handleRemoveComp
   const [autoAnimateList] = useAutoAnimate();
 
   return (
-    // To do Container
-    <div className="container w-100 mb-4">
-      <div className="card">
-        <div className="card-header text-center">
+    <div>
+      <div>
+        <div>
           <h2 style={todos.length > 0 ? {} : { fontStyle: 'italic' }} >{todos.length > 0 ? `Todos (${todos.length})` : 'Your todo list is empty'}</h2>
         </div>
-        <div className="card-body">
-          {/* Remove Checked Tasks Button if they are there */}
-          <div className='App-remove-completed-tasks-button container text-center' ref={autoAnimateButton}>
+        <div>
+          <div className='TodoList' ref={autoAnimateButton}>
             {todos.filter(todo => todo.completed).length > 0 &&
               <button onClick={handleRemoveCompletedTasks} className='btn btn-warning btn-lg'>Remove Completed Tasks</button>}
           </div>
@@ -24,16 +22,13 @@ function TodoList({ todos, handleTodoChecked, handleTodoRemove, handleRemoveComp
           <div className='TodoList' ref={autoAnimateList}>
             {todos.length > 0
               ? todos.map(todo => <TodoItem key={todo.id} todo={todo} handleTodoChecked={handleTodoChecked} handleTodoRemove={handleTodoRemove} />)
-              : <div className="container d-flex flex-column w-50 text-center justify-content-center">
-                <h4 className='py-3 rounded-3 text-white'>All todos are complete!</h4>
+              : <div>
+                <h4>All todos are complete!</h4>
               </div>
             }
           </div>
         </div>
       </div>
-
-
-
     </div>
   );
 }

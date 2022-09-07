@@ -1,0 +1,8 @@
+name: React Drupal
+type: theme
+description: 'A react javascript in drupal basic app'
+core_version_requirement: ^9
+base theme: bartik
+
+libraries:
+  - react_hello/react_app
