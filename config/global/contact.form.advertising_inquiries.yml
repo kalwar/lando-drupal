@@ -1,0 +1,12 @@
+uuid: 2cdf9bf6-538d-443a-a414-aaa5977f6461
+langcode: en
+status: true
+dependencies: {  }
+id: advertising_inquiries
+label: 'Advertising Inquiries'
+recipients:
+  - kalsa@bc.fi
+reply: ''
+weight: 0
+message: 'Thank you for getting in touch with us regarding advertising. We will respond shortly.'
+redirect: ''

@@ -1,0 +1,20 @@
+uuid: b93822f8-e9c9-46d8-823a-9d54694bee05
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - icecream_theme
+id: breadcrumbs
+theme: icecream_theme
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: visible
+  provider: system
+visibility: {  }

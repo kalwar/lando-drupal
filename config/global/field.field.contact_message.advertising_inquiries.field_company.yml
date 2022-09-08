@@ -1,0 +1,19 @@
+uuid: 6bf9ebe1-aa66-4691-93ed-caf5c73a5b74
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.advertising_inquiries
+    - field.storage.contact_message.field_company
+id: contact_message.advertising_inquiries.field_company
+field_name: field_company
+entity_type: contact_message
+bundle: advertising_inquiries
+label: Company
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

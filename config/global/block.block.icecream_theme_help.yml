@@ -1,0 +1,22 @@
+uuid: 0e394657-5171-4a11-986a-d9c41783061f
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - icecream_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: icecream_theme_help
+theme: icecream_theme
+region: header
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

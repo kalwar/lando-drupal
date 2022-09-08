@@ -1,0 +1,29 @@
+uuid: cf4a0d37-c5ea-4a75-b4c8-48ecf83aacd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.advertising_inquiries
+    - field.field.contact_message.advertising_inquiries.field_company
+id: contact_message.advertising_inquiries.default
+targetEntityType: contact_message
+bundle: advertising_inquiries
+mode: default
+content:
+  field_company:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

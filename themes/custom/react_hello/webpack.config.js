@@ -5,8 +5,8 @@ const config = {
   entry: {
     main: ["./js/src/index.jsx"]
   },
-  devtool: (isDevMode) ? 'source-map' : false,
-  //mode: (isDevMode) ? 'development' : 'production',
+  //devtool: (isDevMode) ? 'source-map' : false,
+  mode: 'production',
   output: {
     //path: isDevMode ? path.resolve(__dirname, "js/dist_dev") : path.resolve(__dirname, "js/dist"),
     path: path.resolve(__dirname, "js/dist"),
