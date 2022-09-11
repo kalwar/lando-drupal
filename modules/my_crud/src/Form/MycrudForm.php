@@ -45,7 +45,7 @@ class MycrudForm extends FormBase
   {
     $name = $form_state->getValue('name');
 
-    if (preg_match('/[^A-Za-z]/', $name)) {
+    if (preg_match('/[^A-Z[ ]a-z]/', $name)) {
       $form_state->setErrorByName('name', $this->t('Name must be in Characters Only'));
     }
     $age = $form_state->getValue('age');
